@@ -1,0 +1,500 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/spend_alart/Models/spend.dart', 'packages/flutter/src/material/app.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/spend_alart/widgets/inputTextField.dart', 'packages/spend_alart/widgets/chart.dart', 'packages/spend_alart/widgets/spendCardView.dart'], (function load__packages__spend_alart__main_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__spend_alart__Models__spend$46dart, packages__flutter__src__material__app$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__spend_alart__widgets__inputTextField$46dart, packages__spend_alart__widgets__chart$46dart, packages__spend_alart__widgets__spendCardView$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const title = packages__flutter__src__widgets__widget_span$46dart.src__widgets__title;
+  const binding = packages__flutter__src__widgets__widget_span$46dart.src__widgets__binding;
+  const spend = packages__spend_alart__Models__spend$46dart.Models__spend;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const app_bar_theme = packages__flutter__src__material__icon_button$46dart.src__material__app_bar_theme;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const floating_action_button = packages__flutter__src__material__icon_button$46dart.src__material__floating_action_button;
+  const bottom_sheet = packages__flutter__src__material__icon_button$46dart.src__material__bottom_sheet;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const inputTextField = packages__spend_alart__widgets__inputTextField$46dart.widgets__inputTextField;
+  const chart = packages__spend_alart__widgets__chart$46dart.widgets__chart;
+  const spendCardView = packages__spend_alart__widgets__spendCardView$46dart.widgets__spendCardView;
+  var main = Object.create(dart.library);
+  var $add = dartx.add;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfSpend: () => (T.JSArrayOfSpend = dart.constFn(_interceptors.JSArray$(spend.Spend)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    BuildContextToInputTextField: () => (T.BuildContextToInputTextField = dart.constFn(dart.fnType(inputTextField.InputTextField, [framework.BuildContext])))(),
+    BuildContextToFloatingActionButton: () => (T.BuildContextToFloatingActionButton = dart.constFn(dart.fnType(floating_action_button.FloatingActionButton, [framework.BuildContext])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 34,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 78,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "functionHandeler",
+        [_Location_column]: 47,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 83,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 17,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 17,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 17,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 56,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 13,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 33,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 90,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 15,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 13,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26], widget_inspector._Location);
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 87,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "recentSpendData",
+        [_Location_column]: 19,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29], widget_inspector._Location);
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 94,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "_userSpend",
+        [_Location_column]: 27,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32], widget_inspector._Location);
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 24,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35], widget_inspector._Location);
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 93,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "floatingActionButton",
+        [_Location_column]: 11,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 11,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 11,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.constList([C[38] || CT.C38, C[39] || CT.C39, C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[37] || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 7,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "theme",
+        [_Location_column]: 7,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "home",
+        [_Location_column]: 7,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44, C[45] || CT.C45], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([], widget_inspector._Location);
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 9,
+        [_Location_file]: "file:///C:/Users/Mobarak/Desktop/Flutter_File/project/spend_alart/spend_alart/lib/main.dart"
+      });
+    }
+  }, false);
+  var C = Array(48).fill(void 0);
+  var I = ["package:spend_alart/main.dart"];
+  main.myApplicationHome = class myApplicationHome extends framework.StatefulWidget {
+    createState() {
+      return new main._myApplicationHomeState.new();
+    }
+  };
+  (main.myApplicationHome.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    main.myApplicationHome.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = main.myApplicationHome.prototype;
+  dart.addTypeTests(main.myApplicationHome);
+  dart.addTypeCaches(main.myApplicationHome);
+  dart.setMethodSignature(main.myApplicationHome, () => ({
+    __proto__: dart.getMethods(main.myApplicationHome.__proto__),
+    createState: dart.fnType(main._myApplicationHomeState, [])
+  }));
+  dart.setLibraryUri(main.myApplicationHome, I[0]);
+  var _userSpend = dart.privateName(main, "_userSpend");
+  var _addNewSpend = dart.privateName(main, "_addNewSpend");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  main._myApplicationHomeState = class _myApplicationHomeState extends framework.State$(main.myApplicationHome) {
+    [_addNewSpend](title, amount) {
+      let t0;
+      let newSpend = new spend.Spend.new({id: (t0 = this.i, this.i = t0 + 1, t0), title: title, price: amount, dateTime: new core.DateTime.now()});
+      this.setState(dart.fn(() => {
+        this[_userSpend][$add](newSpend);
+        core.print("Number of index: " + dart.str(this.i) + "\n");
+      }, T.VoidTovoid()));
+    }
+    build(context) {
+      return new app.MaterialApp.new({title: "Spend Alart", theme: theme_data.ThemeData.new({primarySwatch: colors.Colors.pink, accentColor: colors.Colors.blueAccent, fontFamily: "Quicksand", appBarTheme: new app_bar_theme.AppBarTheme.new({textTheme: theme_data.ThemeData.light().textTheme.copyWith({title: new text_style.TextStyle.new({fontFamily: "Quicksand", fontSize: 22.0, fontWeight: ui.FontWeight.bold})})})}), home: new scaffold.Scaffold.new({floatingActionButton: new basic.Builder.new({builder: dart.fn(context => new floating_action_button.FloatingActionButton.extended({icon: new icon.Icon.new(icons.Icons.add, {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), label: new text.Text.new("ADD", {$creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), onPressed: dart.fn(() => {
+                bottom_sheet.showModalBottomSheet(dart.dynamic, {context: context, builder: dart.fn(context => new inputTextField.InputTextField.new(dart.bind(this, _addNewSpend), {$creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), T.BuildContextToInputTextField())});
+              }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), T.BuildContextToFloatingActionButton()), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), appBar: new app_bar.AppBar.new({title: new title.Title.new({color: theme.Theme.of(context).buttonColor, child: new text.Text.new("Home", {$creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), body: new basic.Column.new({children: T.JSArrayOfWidget().of([new chart.Chart.new(this[_userSpend], {$creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), new spendCardView.SpendListCard.new(this[_userSpend], {$creationLocationd_0dea112b090073317d4: C[30] || CT.C30})]), $creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), $creationLocationd_0dea112b090073317d4: C[36] || CT.C36}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41});
+    }
+  };
+  (main._myApplicationHomeState.new = function() {
+    this[_userSpend] = T.JSArrayOfSpend().of([new spend.Spend.new({id: "0ne", title: "Book", price: 5000.0, dateTime: new core.DateTime.now()}), new spend.Spend.new({id: "two", title: "Head Phone", price: 400.0, dateTime: new core.DateTime.now()}), new spend.Spend.new({id: "three", title: "Pen", price: 50.0, dateTime: new core.DateTime.now()}), new spend.Spend.new({id: "four", title: "Charger", price: 570.0, dateTime: new core.DateTime.now()})]);
+    this.i = 0;
+    main._myApplicationHomeState.__proto__.new.call(this);
+    ;
+  }).prototype = main._myApplicationHomeState.prototype;
+  dart.addTypeTests(main._myApplicationHomeState);
+  dart.addTypeCaches(main._myApplicationHomeState);
+  dart.setMethodSignature(main._myApplicationHomeState, () => ({
+    __proto__: dart.getMethods(main._myApplicationHomeState.__proto__),
+    [_addNewSpend]: dart.fnType(dart.void, [core.String, core.double]),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(main._myApplicationHomeState, I[0]);
+  dart.setFieldSignature(main._myApplicationHomeState, () => ({
+    __proto__: dart.getFields(main._myApplicationHomeState.__proto__),
+    [_userSpend]: dart.finalFieldType(core.List$(spend.Spend)),
+    i: dart.fieldType(core.int)
+  }));
+  main.main = function main$(args) {
+    binding.runApp(new main.myApplicationHome.new({$creationLocationd_0dea112b090073317d4: C[46] || CT.C46}));
+  };
+  dart.trackLibraries("packages/spend_alart/main.dart", {
+    "package:spend_alart/main.dart": main
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAa2C;IAAyB;;;;;;EACpE;;;;;;;;;;;;;;;;mBA+B2B,OAAc;;AAC/B,qBAAW,0BACV,aAAD,cAAC,eACE,KAAK,SACL,MAAM,YACM;AAKnB,MAHF,cAAS;AACiB,QAAxB,AAAW,uBAAI,QAAQ;AACO,QAA9B,WAAM,AAAuB,+BAAJ,UAAC;;IAE9B;UAG0B;AACxB,YAAO,iCACE,sBACA,yCACmB,iCACF,sCACR,0BACC,8CACY,AAAQ,AAAU,wDACxB,0CACG,uBACF,kBACa,kCAE/B,iDACoB,gCACX,QAAC,WAAiC,gEACjC,kBAAW,kFACV,kBAAK,4EACD;AAKH,gBAJN,0DACa,OAAO,WACP,QAAC,WACD,gDAAe;uMAI5B,+BACC,4BACQ,AAAY,eAAT,OAAO,sBAChB,kBAAK,gMAGV,gCAAiB,wBACrB,oBAAM,8EAGN,oCAAc;IAGxB;;;IAlFkB,mBAAa,uBAC7B,yBACM,cACG,eACA,kBACY,2BAErB,yBACM,cACG,qBACA,iBACY,2BAErB,yBACM,gBACG,cACA,gBACY,2BAErB,yBACM,eACG,kBACA,iBACY;IAInB,SAAI;;;EAwDV;;;;;;;;;;;;;;6BA7FuB;AACM,IAA3B,eAAO;EACT","file":"../../../../../../../../packages/spend_alart/main.dart.lib.js"}');
+  // Exports:
+  return {
+    main: main
+  };
+}));
+
+//# sourceMappingURL=main.dart.lib.js.map
